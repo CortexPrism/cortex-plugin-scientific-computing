@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-scientific-computing",
+  "version": "1.0.0",
+  "description": "Scientific Computing Notebook — Jupyter execution in sandbox with NumPy/SciPy/SymPy/PyMC, LaTeX output",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-scientific-computing",
+  "homepage": "https://cortexprism.io/marketplace/plugins/scientific-computing",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "sci_run", "description": "Run Python/R scientific computation", "params": [] },
+    {
+      "name": "sci_simulate",
+      "description": "Run Monte Carlo or Bayesian simulation",
+      "params": []
+    },
+    { "name": "sci_solve", "description": "Solve differential equations", "params": [] },
+    {
+      "name": "sci_export_figure",
+      "description": "Export publication-quality LaTeX figure",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
